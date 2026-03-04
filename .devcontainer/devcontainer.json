@@ -1,0 +1,34 @@
+{
+  "name": "DevX Platform",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+      "kubectl": "latest",
+      "helm": "latest",
+      "minikube": "none"
+    }
+  },
+  "forwardPorts": [80, 443, 3000, 7007, 8080, 9090],
+  "portsAttributes": {
+    "80":   { "label": "HTTP Ingress" },
+    "443":  { "label": "HTTPS Ingress" },
+    "3000": { "label": "Grafana" },
+    "7007": { "label": "Backstage" },
+    "8080": { "label": "ArgoCD" },
+    "9090": { "label": "Prometheus" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "redhat.vscode-yaml",
+        "tim-koehler.helm-intellisense"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
