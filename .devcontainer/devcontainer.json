@@ -4,7 +4,9 @@
     "dockerfile": "Dockerfile"
   },
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": false
+    },
     "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
       "kubectl": "latest",
       "helm": "latest",
@@ -17,7 +19,7 @@
     "443":  { "label": "HTTPS Ingress" },
     "3000": { "label": "Grafana" },
     "7007": { "label": "Backstage" },
-    "8080": { "label": "ArgoCD" },
+    "8080": { "label": "ArgoCD" },``
     "9090": { "label": "Prometheus" }
   },
   "customizations": {
