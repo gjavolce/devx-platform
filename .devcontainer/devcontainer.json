@@ -19,8 +19,8 @@
     "443":  { "label": "HTTPS Ingress" },
     "3000": { "label": "Grafana" },
     "7007": { "label": "Backstage" },
-    "8080": { "label": "ArgoCD" },``
-    "9090": { "label": "Prometheus" }
+    "8080": { "label": "ArgoCD" },
+    "9090": { "label": "Prometheus" 
   },
   "customizations": {
     "vscode": {
